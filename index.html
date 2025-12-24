@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YourKart</title>
+    <link rel="stylesheet" href="YourKart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <h2>YourKart</h2>
+            <div class="cart-icon" onclick="openCart()"><i class='fas fa-shopping-cart' style='font-size:17px'></i>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="products" id="products"></div>
+         
+        <div class="cart" id="cart">
+            <h2>Cart</h2>
+            <div id="cartItems"></div>
+            <h3>Total: ₹<span id="total">0</span></h3>
+            <button class="buy-btn"  onclick="openCheckOut()">Buy Now</button>
+            <button class="clear-btn" onclick="clearCart()">Clear Cart</button>
+            <button class="close-btn" onclick="closeCart()">Back to items</button>
+        </div>
+
+        <div class="checkOut" id="checkOut">
+            <h3>Checkout</h3>
+            <input type="text" id="phone" placeholder="Phone Number"><br>
+            <textarea id="address" placeholder="Delivery Address"></textarea><br>
+            <button class="placeOrder" onclick="placeOrder()">Place Order</button>
+        </div>
+        
+
+
+    </main>
+    <footer>
+
+    </footer>
+    <script src="YourKart.js"></script>
+    
+</body>
+</html>
